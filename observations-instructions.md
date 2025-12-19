@@ -9,7 +9,7 @@ It is not a content generator you hand work off to. It is a **guided drafting pa
 The goal is to produce one high-quality observation at a time that aligns with our observation writing guide and review rubric.
 
 ## Setting up ProGPT
-1. Navigate to [my GitHub Repository](https://github.com/lazyshamrock/Work-Templates/blob/main/observations-prompt.txt) and copy the text content to the clipboard.
+1. Navigate to [my GitHub Repository](https://github.com/lazyshamrock/Work-Templates/blob/main/observations-prompt.md?plain=1) and copy the text content to the clipboard.
 2. Navigate to ProGPT and create a new chat.
 2. Click on the Persona button at the top of the chat window.
 3. Click the Edit button to edit the persona.
