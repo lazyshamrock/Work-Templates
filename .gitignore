@@ -1,3 +1,4 @@
 # Exclude Tim's Customized briefings.
 *_TM*
 /x Working/
+.DS_Store
