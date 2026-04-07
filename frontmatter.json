@@ -1,0 +1,73 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "frequency",
+      "options": [
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Quarterly",
+        "On Demand"
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Keep Private",
+          "name": "isPrivate",
+          "type": "boolean"
+        },
+        {
+          "title": "Related Tools",
+          "name": "related_tools",
+          "type": "categories"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Frequency",
+          "name": "frequency",
+          "type": "taxonomy",
+          "taxonomyId": "frequency"
+        },
+        {
+          "title": "Scheduled Run Time",
+          "name": "when",
+          "type": "string",
+          "single": true,
+          "when":{
+            "fieldRef": "frequency",
+            "operator": "neq",
+            "value": "On Demand",
+            "caseSensitive": false
+          }
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]",
+      "title": "[[workspace]]"
+    }
+  ]
+}

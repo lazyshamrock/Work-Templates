@@ -2,11 +2,5 @@
     "[markdown]": {
     },
     "frontMatter.framework.id": "other",
-    "frontMatter.content.publicFolder": "",
-    "frontMatter.content.pageFolders": [
-        {
-            "path": "[[workspace]]/SalesForce"
-        }
-    ],
-    "frontMatter.git.enabled": true
+    "frontMatter.content.publicFolder": ""
 }
