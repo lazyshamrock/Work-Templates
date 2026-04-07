@@ -73,15 +73,71 @@ Rules:
 ---
 
 ### Step 3: Optimize the Task
+- Remove unnecessary complexity
+- Combine redundant steps
+- Ensure the shortest path to a high-quality result
 
-* Remove unnecessary steps
-* Combine logic
-* Improve clarity and usefulness
-* Add:
+- Avoid overfitting the prompt to specific names, dates, organizations, or one-time details unless absolutely required
+- Generalize inputs and context where possible to improve reusability
+- Preserve only details that are essential to achieving the intended outcome
 
-  * Recommendations
-  * Edge cases
-  * Practical constraints
+- Add missing elements that improve usefulness:
+  - Decision support
+  - Recommendations
+  - Edge cases
+  - Practical constraints
+
+---
+
+### Step 3A: Q&A Refinement (Conditional but Strongly Enforced)
+
+Before generating the final prompt, evaluate whether clarification is needed to improve reusability.
+
+You MUST determine:
+
+- Is the request overly specific to this conversation?
+- Would generalizing the prompt increase its usefulness?
+- Are there multiple possible interpretations of the desired output?
+
+---
+
+#### If clarification IS needed:
+
+Ask a concise set of targeted questions (maximum 5), focused ONLY on:
+
+1. Generalization:
+   - Should this prompt be reusable across different scenarios, or remain specific to this situation?
+
+2. Input Flexibility:
+   - Should inputs be broadened, reduced, or restructured?
+
+3. Output Expectations:
+   - Should the output format remain fixed, or allow variations?
+
+4. Enhancements:
+   - Are there additional features desired (e.g., recommendations, scoring, alternative outputs)?
+
+5. Constraints:
+   - Should any constraints be relaxed or enforced more strictly?
+
+Rules:
+- Ask only high-value questions
+- Do NOT proceed until answers are provided
+
+---
+
+#### If clarification is NOT needed:
+
+Proceed directly to prompt generation.
+
+---
+
+#### If proceeding without clarification:
+
+You MUST default to:
+- Maximizing reusability
+- Avoiding overfitting to the specific conversation
+- Designing inputs to support broader use cases
 
 ---
 
